@@ -1,0 +1,16 @@
+<div class="card text-white bg-dark mb-3">
+    <div class="card-header">
+        <h1></h1>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Data: {{fatture.data}} </h5>
+        <h6 class="card-subtitle mb-2 text-muted">Numero: {{fatture.numero}} </h6>
+        <p class="card-text">Anno:{{fatture.anno}} </p>
+        <p class="card-text">Importo: {{fatture.importo}} </p>
+        <p class="card-text">Cliente: {{fatture.cliente}} </p>
+        <p class="card-text">Ragione Sociale: {{fatture.ragioneSociale}} </p>
+        <p class="card-text">Importo:{{fatture.importo}} </p>
+        <button type="button" class="Form-control btn btn-secondary">Modifica</button>
+    </div>
+</div>
+{{fatture | json}}

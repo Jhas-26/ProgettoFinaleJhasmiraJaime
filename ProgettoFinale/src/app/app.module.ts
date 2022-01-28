@@ -15,7 +15,7 @@ import { AddClientiComponent } from './add-clienti/add-clienti.component';
 import { FormsModule } from '@angular/forms';
 import { NewClientComponent } from './new-client/new-client.component';
 import { FattureComponent } from './fatture/fatture.component';
-//import { HttpFattureModule } from '@angular/common/http';
+import { FattureDetailComponent } from './fatture-detail/fatture-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,14 +26,14 @@ import { FattureComponent } from './fatture/fatture.component';
     ClientiDetailComponent,
     AddClientiComponent,
     NewClientComponent,
-    FattureComponent
+    FattureComponent,
+    FattureDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    //HttpFatturesModule,
     FormsModule
   ],
   providers: [

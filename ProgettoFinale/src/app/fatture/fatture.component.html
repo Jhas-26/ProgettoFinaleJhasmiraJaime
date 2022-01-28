@@ -12,25 +12,18 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row"> </th>
-            <td> </td>
-            <td></td>
-            <td></td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td></td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td></td>
+        <tr *ngFor="let item of fatture; index as i">
+            <th scope="row">{{item.id}} </th>
+            <td> {{item.data}} </td>
+            <td> {{item.numero}}</td>
+            <td> {{item.anno}}</td>
+            <td>{{item.importo}}</td>
+            <td>{{item.cliente}}</td>
+            <td>{{item.ragioneSociale}}</td>
             <td>
                 <button type="button" class="btn btn-danger btn-sm mx-1"><i class="bi bi-trash-fill"></i></button>
-                <button type="button" class="btn btn-secondary btn-sm mx-1"><i class="bi bi-bookmark-plus"></i></button>
-                <button type="button" class="btn btn-warning btn-sm mx-1"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" class="btn btn-warning btn-sm mx-1" (click)="detail(i+1)"><i
+                        class="bi bi-pencil-square"></i></button>
             </td>
         </tr>
     </tbody>
