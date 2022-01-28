@@ -1,0 +1,37 @@
+<div class="card text-white bg-dark mb-3">
+    <div class="card-header">
+        <h1>{{cliente.nomeContatto}} {{cliente.cognomeContatto}}</h1>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Ragione Sociale: {{cliente.ragioneSociale}} </h5>
+        <h6 class="card-subtitle mb-2 text-muted">P.IVA: {{cliente.partitaIva}} </h6>
+        <p class="card-text">Tipo cliente:{{cliente.tipoCliente}} </p>
+        <p class="card-text">Email: {{cliente.email}} </p>
+        <p class="card-text">Pec: {{cliente.pec}} </p>
+        <p class="card-text">Telefono contatto: {{cliente.telefonoContatto}} </p>
+        <p class="card-text">Email contatto:{{cliente.emailContatto}} </p>
+        <h5 class="card-text">Sede Operativa: </h5>
+        <p class="card-text">Via: {{cliente.indirizzoSedeOperativa.via}} </p>
+        <p class="card-text">Civico: {{cliente.indirizzoSedeOperativa.civico}} </p>
+        <p class="card-text">CAP: {{cliente.indirizzoSedeOperativa.cap}} </p>
+        <p class="card-text">Localita: {{cliente.indirizzoSedeOperativa.localita}} </p>
+        <p class="card-text">Comune: {{cliente.indirizzoSedeOperativa.comune.nome}} </p>
+        <p class="card-text">Provincia: {{cliente.indirizzoSedeOperativa.comune.provincia.nome}} </p>
+        <p class="card-text">Sigla:{{cliente.indirizzoSedeOperativa.comune.provincia.sigla}} </p>
+        <h5 class="card-text">Sede legale: </h5>
+        <p class="card-text">Via: {{cliente.indirizzoSedeLegale.via}}</p>
+        <p class="card-text">Civico: {{cliente.indirizzoSedeLegale.civico}} </p>
+        <p class="card-text">CAP: {{cliente.indirizzoSedeLegale.cap}}</p>
+        <p class="card-text">Localita:{{cliente.indirizzoSedeLegale.localita}} </p>
+        <p class="card-text">Comune: {{cliente.indirizzoSedeLegale.comune}} </p>
+        <p class="card-text">Provincia: {{cliente.indirizzoSedeLegale.comune.provincia.nome}}</p>
+        <p class="card-text">Sigla: {{cliente.indirizzoSedeLegale.comune.provincia.sigla}} </p>
+        <button type="button" class="Form-control btn btn-secondary" (click)="modifica(cliente)">Modifica</button>
+        <!--<ul>
+        <li *ngFor="let item of cliente"><a href="#" [routerLink]="['/AddClienti', item.id]"
+        routerLinkActive="router-link-active">{{item.name}}</a></li>
+      </ul>-->
+
+
+    </div>
+</div>
