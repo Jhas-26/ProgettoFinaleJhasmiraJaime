@@ -18,7 +18,7 @@ export class FattureDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      this.fattureService.getFattureById(params[('id')]).subscribe(response => this.fatture = response);
+      this.fattureService.getFattureById(params[('id')]).subscribe(fattur => this.fatture = fattur);
     });
   }
 

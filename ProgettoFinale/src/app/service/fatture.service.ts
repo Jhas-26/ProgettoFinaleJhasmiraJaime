@@ -25,4 +25,5 @@ export class FattureService {
   getFattureById(id: number) {
     return this.http.get<Fattur>(environment.fattureById + id, { headers: this.headers });
   }
+
 }
